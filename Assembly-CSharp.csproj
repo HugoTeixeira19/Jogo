@@ -57,6 +57,7 @@
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChatGui.cs" />
     <Compile Include="Assets\TextMesh Pro\Scripts\jogo\Player\Computer.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\TextToggleIsOnTransition.cs" />
+    <Compile Include="Assets\TextMesh Pro\Scripts\PanelRankingController.cs" />
     <Compile Include="Assets\TextMesh Pro\Scripts\RankingController.cs" />
     <Compile Include="Assets\TextMesh Pro\Scripts\jogo\Cards\CardLifeSingle.cs" />
     <Compile Include="Assets\Photon\PhotonRealtime\Demos\DemoLoadBalancing\ConnectAndJoinRandomLb.cs" />
@@ -94,7 +95,6 @@
     <Compile Include="Assets\TextMesh Pro\Scripts\jogo\Player\PlayerBaseSingle.cs" />
     <Compile Include="Assets\TextMesh Pro\Scripts\Network\PhotonLobby.cs" />
     <Compile Include="Assets\TextMesh Pro\Scripts\Network\Cards\CardBase.cs" />
-    <Compile Include="Assets\TextMesh Pro\Scripts\PanelRankingController.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />

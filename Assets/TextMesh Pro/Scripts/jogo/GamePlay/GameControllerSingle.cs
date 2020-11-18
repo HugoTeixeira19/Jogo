@@ -36,7 +36,7 @@ public class GameControllerSingle : MonoBehaviour
 
     // Controle da partida
     public static GameControllerSingle instance;
-    //private RankingController controlRank = new RankingController();
+    private bool controlRank;
 
     // Start is called before the first frame update
     void Start()
@@ -45,6 +45,8 @@ public class GameControllerSingle : MonoBehaviour
         instance = this;
         player1.jogadaVez = true;
         cpu.jogadaVez = false;
+
+        controlRank = false;
 
 
         time = 0;
@@ -540,7 +542,11 @@ public class GameControllerSingle : MonoBehaviour
             panelVencedor.SetActive(true);
             textosPanel[0].SetText(vencedor);
             textosPanel[2].SetText(player1.GetPontuacao.ToString());
-            RankingController.CriarArquivo(player1.GetPontuacao);
+            if (!controlRank && player1.GetPontuacao != 0)
+            {
+                RankingController.CriarArquivo(player1.GetPontuacao);
+                controlRank = true;
+            }
         }
     }
 

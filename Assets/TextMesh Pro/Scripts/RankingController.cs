@@ -9,14 +9,20 @@ public class RankingController : MonoBehaviour
     private static string path = ".\\Assets\\Configure\\rank.txt";
     private static StreamWriter texto;
     private string[] leitura;
+    private static string[] aux;
 
     
 
     // Start is called before the first frame update
     void Start()
     {
-        leitura = File.ReadAllLines(path);
+        if (!File.Exists(path))
+        {
+            File.CreateText(path);
+        }
 
+        leitura = File.ReadAllLines(path);
+        aux = leitura;
         if (leitura.Length > 0)
         {
             LeituraRank(path);
@@ -57,21 +63,17 @@ public class RankingController : MonoBehaviour
     public static void EscritaRank(int pontuacaoAdquirida)
     {
         texto = new StreamWriter(path, true);
-
-        lista.Add(pontuacaoAdquirida);
-
-        for (int i = 0; i < lista.Count; i++)
+        
+        if(aux.Length < 1)
         {
-            texto.WriteLine(path, File.ReadAllLines(path)[i]);
-        }
-        texto.Close();
-
-
-        foreach (int i in lista)
+            texto.Write(pontuacaoAdquirida);
+            texto.Close();
+        } else
         {
-            Debug.Log("VALOR DO RANK: " + i);
+            texto.WriteLine();
+            texto.Write(pontuacaoAdquirida);
+            texto.Close();
         }
-        Debug.Log("TAMANHO DE N NA LISTA: " + lista.Count);
     }
 
     public List<int> GetLista
