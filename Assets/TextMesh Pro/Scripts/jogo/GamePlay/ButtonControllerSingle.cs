@@ -13,8 +13,13 @@ public class ButtonControllerSingle : MonoBehaviour
 
 
     public GameObject menuConfigure;
-    public Sprite iconeSomMute;
-    public Sprite iconeSom;
+    public GameObject iconeSom;
+
+    [Space(15)]
+    [Header("Sprites dos icones do som")]
+    public Sprite somHabilitado;
+    public Sprite somDesabilitado;
+    private bool isEnable = true;
     public Slider barraVolume;
 
     private void Start()
@@ -51,9 +56,17 @@ public class ButtonControllerSingle : MonoBehaviour
 
     public void onClickMute()
     {
-        SpriteRenderer imgIconeSom = GetComponent<SpriteRenderer>();
-        imgIconeSom.sprite = iconeSomMute;
-        barraVolume.value = 0f;
+        isEnable = !isEnable;
+
+        if (isEnable)
+        {
+            barraVolume.value = 100.0f;
+            iconeSom.GetComponent<Image>().sprite = somHabilitado;
+        } else
+        {
+            barraVolume.value = 0f;
+            iconeSom.GetComponent<Image>().sprite = somDesabilitado;
+        }
     }
 
     public void onClickClosePause()

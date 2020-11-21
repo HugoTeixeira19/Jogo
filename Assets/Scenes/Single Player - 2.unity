@@ -635,18 +635,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0495cf658b47553488e169889af8d011, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1490748342 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1490748342, guid: c6dc06a84e3b714478280df645dc3a6a,
-    type: 3}
-  m_PrefabInstance: {fileID: 7938643380610318599}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0495cf658b47553488e169889af8d011, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1636617194
 GameObject:
   m_ObjectHideFlags: 0
@@ -1384,6 +1372,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1490748343, guid: c6dc06a84e3b714478280df645dc3a6a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 853969351}
+    - target: {fileID: 1490748343, guid: c6dc06a84e3b714478280df645dc3a6a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: onClickManaEmpty
+      objectReference: {fileID: 0}
+    - target: {fileID: 1490748343, guid: c6dc06a84e3b714478280df645dc3a6a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ButtonControllerSingle, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 333449163085724424, guid: c6dc06a84e3b714478280df645dc3a6a,
         type: 3}
       propertyPath: m_Name
@@ -1449,6 +1449,21 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2871281774654938366, guid: c6dc06a84e3b714478280df645dc3a6a,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 853969351}
+    - target: {fileID: 2871281774654938366, guid: c6dc06a84e3b714478280df645dc3a6a,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: onClickAttack
+      objectReference: {fileID: 0}
+    - target: {fileID: 2871281774654938366, guid: c6dc06a84e3b714478280df645dc3a6a,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ButtonControllerSingle, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 3375413255746406698, guid: c6dc06a84e3b714478280df645dc3a6a,
         type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -1463,11 +1478,29 @@ PrefabInstance:
         type: 3}
       propertyPath: btnSemMana
       value: 
-      objectReference: {fileID: 1490748342}
+      objectReference: {fileID: 0}
+    - target: {fileID: 7598797210000017932, guid: c6dc06a84e3b714478280df645dc3a6a,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 853969351}
+    - target: {fileID: 7598797210000017932, guid: c6dc06a84e3b714478280df645dc3a6a,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: onClickDefense
+      objectReference: {fileID: 0}
+    - target: {fileID: 7598797210000017932, guid: c6dc06a84e3b714478280df645dc3a6a,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ButtonControllerSingle, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 7895206563467703650, guid: c6dc06a84e3b714478280df645dc3a6a,
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -10.400002
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8625425183987305531, guid: c6dc06a84e3b714478280df645dc3a6a, type: 3}
+    - {fileID: 498204913036920333, guid: c6dc06a84e3b714478280df645dc3a6a, type: 3}
+    - {fileID: 1490748342, guid: c6dc06a84e3b714478280df645dc3a6a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c6dc06a84e3b714478280df645dc3a6a, type: 3}

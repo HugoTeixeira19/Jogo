@@ -198,7 +198,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -776,8 +776,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menuConfigure: {fileID: 1140048993424211275}
-  iconeSomMute: {fileID: 21300000, guid: a79ce12ce154a024089845b064fcb7de, type: 3}
-  iconeSom: {fileID: 21300000, guid: 1a4e88bd4839f3b41b08304c1159edb4, type: 3}
+  iconeSom: {fileID: 2598095972259809496}
+  somHabilitado: {fileID: 21300000, guid: 1a4e88bd4839f3b41b08304c1159edb4, type: 3}
+  somDesabilitado: {fileID: 21300000, guid: a79ce12ce154a024089845b064fcb7de, type: 3}
   barraVolume: {fileID: 310910422}
 --- !u!1 &1773667740
 GameObject:
@@ -874,8 +875,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menuConfigure: {fileID: 1140048993424211275}
-  iconeSomMute: {fileID: 21300000, guid: a79ce12ce154a024089845b064fcb7de, type: 3}
-  iconeSom: {fileID: 21300000, guid: 1a4e88bd4839f3b41b08304c1159edb4, type: 3}
+  iconeSom: {fileID: 2598095972259809496}
+  somHabilitado: {fileID: 21300000, guid: 1a4e88bd4839f3b41b08304c1159edb4, type: 3}
+  somDesabilitado: {fileID: 21300000, guid: a79ce12ce154a024089845b064fcb7de, type: 3}
   barraVolume: {fileID: 310910422}
 --- !u!1 &1780894949
 GameObject:
@@ -2432,8 +2434,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menuConfigure: {fileID: 1140048993424211275}
-  iconeSomMute: {fileID: 21300000, guid: a79ce12ce154a024089845b064fcb7de, type: 3}
-  iconeSom: {fileID: 21300000, guid: 1a4e88bd4839f3b41b08304c1159edb4, type: 3}
+  iconeSom: {fileID: 2598095972259809496}
+  somHabilitado: {fileID: 21300000, guid: 1a4e88bd4839f3b41b08304c1159edb4, type: 3}
+  somDesabilitado: {fileID: 21300000, guid: a79ce12ce154a024089845b064fcb7de, type: 3}
   barraVolume: {fileID: 310910422}
 --- !u!1 &4233173609909896086
 GameObject:
@@ -3388,8 +3391,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menuConfigure: {fileID: 1140048993424211275}
-  iconeSomMute: {fileID: 21300000, guid: a79ce12ce154a024089845b064fcb7de, type: 3}
-  iconeSom: {fileID: 21300000, guid: 1a4e88bd4839f3b41b08304c1159edb4, type: 3}
+  iconeSom: {fileID: 2598095972259809496}
+  somHabilitado: {fileID: 21300000, guid: 1a4e88bd4839f3b41b08304c1159edb4, type: 3}
+  somDesabilitado: {fileID: 21300000, guid: a79ce12ce154a024089845b064fcb7de, type: 3}
   barraVolume: {fileID: 310910422}
 --- !u!1 &9052076035187732443
 GameObject:
