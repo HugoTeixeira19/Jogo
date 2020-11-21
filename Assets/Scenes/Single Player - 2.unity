@@ -880,6 +880,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6982421409966015528, guid: c6dc06a84e3b714478280df645dc3a6a,
         type: 3}
+      propertyPath: totalMana
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 6982421409966015528, guid: c6dc06a84e3b714478280df645dc3a6a,
+        type: 3}
       propertyPath: btnSemMana
       value: 
       objectReference: {fileID: 1418975067}

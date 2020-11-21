@@ -54,8 +54,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Assets\TextMesh Pro\Scripts\Network\PhotonRoom.cs" />
+    <Compile Include="Assets\TextMesh Pro\Scripts\ControllerFases.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChatGui.cs" />
     <Compile Include="Assets\TextMesh Pro\Scripts\jogo\Player\Computer.cs" />
+    <Compile Include="Assets\TextMesh Pro\Scripts\ControllerCredito.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\TextToggleIsOnTransition.cs" />
     <Compile Include="Assets\TextMesh Pro\Scripts\PanelRankingController.cs" />
     <Compile Include="Assets\TextMesh Pro\Scripts\RankingController.cs" />
@@ -85,9 +87,11 @@
     <Compile Include="Assets\TextMesh Pro\Scripts\Network\PartidaLobbyController.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\TextButtonTransition.cs" />
     <Compile Include="Assets\TextMesh Pro\Scripts\Network\GameController\PhotonPlayer.cs" />
+    <Compile Include="Assets\TextMesh Pro\Scripts\LoadingScene.cs" />
     <Compile Include="Assets\TextMesh Pro\Scripts\Network\GamePlay\ButtonController.cs" />
-    <Compile Include="Assets\TextMesh Pro\Scripts\ControllerButtonRanking.cs" />
+    <Compile Include="Assets\TextMesh Pro\Scripts\ControllerButtonRankingAndTutorial.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\FriendItem.cs" />
+    <Compile Include="Assets\TextMesh Pro\Scripts\ControllerFade.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\OnStartDelete.cs" />
     <Compile Include="Assets\TextMesh Pro\Scripts\Network\Player\PlayerBase.cs" />
     <Compile Include="Assets\TextMesh Pro\Scripts\MenuController.cs" />
@@ -115,6 +119,7 @@
      <None Include="Assets\Photon\PhotonLibs\Photon3Unity3D.dll" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
      <None Include="Assets\Photon\PhotonLibs\Metro\Photon3Unity3D.dll" />
+     <None Include="Assets\Configure\info.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
      <None Include="Assets\Photon\PhotonLibs\Photon3Unity3D.xml" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />

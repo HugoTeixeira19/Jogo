@@ -1076,6 +1076,11 @@ PrefabInstance:
       objectReference: {fileID: 1904127475}
     - target: {fileID: 296622206472064356, guid: 1fc1efd27d4ac6a45a84d797b934668c,
         type: 3}
+      propertyPath: totalMana
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 296622206472064356, guid: 1fc1efd27d4ac6a45a84d797b934668c,
+        type: 3}
       propertyPath: defesaJogador
       value: 
       objectReference: {fileID: 0}
@@ -1237,11 +1242,21 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1951190081}
+    - target: {fileID: 8303278122090488209, guid: 38be6da0762f35a498f5b60dca4faa19,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8303278122533431924, guid: 38be6da0762f35a498f5b60dca4faa19,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1951190081}
+    - target: {fileID: 8303278122533431924, guid: 38be6da0762f35a498f5b60dca4faa19,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: onClickMenu
+      objectReference: {fileID: 0}
     - target: {fileID: 8303278122948796564, guid: 38be6da0762f35a498f5b60dca4faa19,
         type: 3}
       propertyPath: m_RootOrder

@@ -19,13 +19,14 @@ public class RankingController : MonoBehaviour
         if (!File.Exists(path))
         {
             File.CreateText(path);
-        }
-
-        leitura = File.ReadAllLines(path);
-        aux = leitura;
-        if (leitura.Length > 0)
+        } else if (File.Exists(path))
         {
-            LeituraRank(path);
+            leitura = File.ReadAllLines(path);
+            aux = leitura;
+            if (leitura.Length > 0)
+            {
+                LeituraRank(path);
+            }
         }
     }
 

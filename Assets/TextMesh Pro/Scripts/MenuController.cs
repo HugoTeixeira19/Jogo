@@ -3,17 +3,18 @@ using UnityEngine.SceneManagement;
 
 public class MenuController : MonoBehaviour
 {
-   public void PlayScene()
+    public void PlayScene()
     {
-        SceneManager.LoadScene("");
+        SceneManager.LoadScene("Scenes/ListaFasesScene");
     }
+
     public void CreditoScene()
     {
-        SceneManager.LoadScene("");
+        SceneManager.LoadScene("Scenes/CreditoScene");
     }
     public void TutorialScene()
     {
-        SceneManager.LoadScene("");
+        SceneManager.LoadScene("Scenes/TutorialScene");
     }
     public void RankingScene()
     {

@@ -82,7 +82,7 @@ public class Computer : MonoBehaviour
      * */
     public bool cpuRespostaHard(int estilo)
     {   
-        // soma um de mana
+        // soma três de mana
         cpu.CustoMana(-3);
 
         /* executa a resposta da cpu e retorna verdadeiro se

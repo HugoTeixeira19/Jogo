@@ -45,7 +45,6 @@ public class GameControllerSingle : MonoBehaviour
         instance = this;
         player1.jogadaVez = true;
         cpu.jogadaVez = false;
-
         controlRank = false;
 
 
@@ -386,7 +385,9 @@ public class GameControllerSingle : MonoBehaviour
         {
             dano = card.getCurrentResistance;
             Destroy(card.gameObject);
-            
+            player1.table.CardNaMesa.Remove(card);
+            player1.table.ReorganizeTable();
+
             player1.table.ReorganizeTable();
             if (dano < 0)
             {
@@ -453,6 +454,9 @@ public class GameControllerSingle : MonoBehaviour
         player1.RestaurarMana();
         player1.atualizarAtributos();
         player1.btnSemMana.GetComponent<Button>().interactable = false;
+
+        player1.defesaJogador.SetActive(false);
+        computer.defesaCpu.SetActive(false);
     }
 
     // Limpa as cartas da mesa do player passado por parâmetro
@@ -470,10 +474,8 @@ public class GameControllerSingle : MonoBehaviour
     {
         if(player.table.CardNaMesa.Count <= 0)
         {
-            Debug.Log("Verificar carta na mesa: false");
             return false;
         }
-        Debug.Log("Verificar carta na mesa: true");
         return true;
     }
 
@@ -498,7 +500,7 @@ public class GameControllerSingle : MonoBehaviour
         bool endMatch = false;
         if(player1.getLife == 0)
         {
-            vencedor = "Cpu venceu!!";
+            vencedor = "Perdeu!!";
             endMatch = true;
         } else if(cpu.getLife == 0)
         {
@@ -513,11 +515,11 @@ public class GameControllerSingle : MonoBehaviour
             }
             else if(player1.pontos < cpu.pontos)
             {
-                vencedor = "Cpu venceu!!";
+                vencedor = "Perdeu!!";
             }
             else if(player1.getLife < cpu.getLife)
             {
-                vencedor = "Cpu venceu!!";
+                vencedor = "Perdeu!!";
             }
             else
             {
@@ -526,7 +528,9 @@ public class GameControllerSingle : MonoBehaviour
             endMatch = true;
         }
 
-        // garante terminar o jogo somente se houver um vencedor
+        /* Garante terminar o jogo somente se houver um vencedor,
+         * limpando as cartas da mesa e apresentando o Canvas de fim de jogo
+         * */
         if (endMatch)
         {
             TextMeshProUGUI[] textosPanel = panelVencedor.GetComponentsInChildren<TextMeshProUGUI>();
@@ -546,6 +550,8 @@ public class GameControllerSingle : MonoBehaviour
             {
                 RankingController.CriarArquivo(player1.GetPontuacao);
                 controlRank = true;
+                // registrando a fase cumprida
+                ControllerFases.CriarArquivo(faseAtual);
             }
         }
     }
@@ -557,6 +563,10 @@ public class GameControllerSingle : MonoBehaviour
         LimparMesa(player);
     }
 
+    /*
+     *  Método que realiza a distribuição da pontuação de acordo com a
+     *  fase passada por parâmetro.
+     * */
     public void DistribuirPontuacao(int fase)
     {
         int[] pontos = Pontuacao(fase);
@@ -586,6 +596,10 @@ public class GameControllerSingle : MonoBehaviour
         }
     }
 
+    /*
+     *  Definição da quantidade de pontos de acordo com a fase atribuído em
+     *  um array e o retornando
+     * */
     private int[] Pontuacao(int fase)
     {
         int[] pontos = null;

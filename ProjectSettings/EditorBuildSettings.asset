@@ -6,11 +6,23 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/LogoUnip.unity
+    guid: 0a2fc91ec4a5b9941b4114415abd1d81
+  - enabled: 1
+    path: Assets/Scenes/LogoUnicluster.unity
+    guid: e78afcd968c4dfd4ea22b71feba12606
+  - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: 89808f18ddbaaa44f80b651f91ea05cc
   - enabled: 1
+    path: Assets/Scenes/TutorialScene.unity
+    guid: d0bca57f0daa4324f9ca83bf5ea493e3
+  - enabled: 1
     path: Assets/Scenes/RankingScene.unity
     guid: e0c722f43ed9a8445b1f390d9b3a3a35
+  - enabled: 1
+    path: Assets/Scenes/ListaFasesScene.unity
+    guid: e2cd720d0ec18fe499c9947e8155f082
   - enabled: 1
     path: Assets/Scenes/Lobby Room.unity
     guid: 7b1235bd317fc964395f14337cff3039
@@ -20,6 +32,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Multiplayer.unity
     guid: 36cbddfc6e0a19c4596cd9c7070d5ad3
+  - enabled: 1
+    path: Assets/Scenes/CreditoScene.unity
+    guid: 51da168c7298419469d21e5c38a40193
   - enabled: 1
     path: Assets/Scenes/Single Player - 1.unity
     guid: c41c09f24a42b8f43afc2c10560bc3a4

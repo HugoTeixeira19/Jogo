@@ -46,7 +46,7 @@ public class ButtonControllerSingle : MonoBehaviour
 
     public void onClickMenu()
     {
-        SceneManager.LoadScene("Scenes/Menu");
+        SceneManager.LoadScene("Scenes/ListaFasesScene");
     }
 
     public void onClickMute()
